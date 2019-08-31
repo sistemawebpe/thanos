@@ -1,0 +1,21 @@
+$(document).ready(function(){
+    $(".contenedorRegistrarUsuario").hide();
+    $(".contenedorRegistrarEmpresas").hide();
+    $("#regUsuario").click(function(){
+        $(".contenedorRegistrar").hide();
+        $(".contenedorRegistrarUsuario").toggle(200);
+    });
+    $("#regEmpresa").click(function(){
+        $(".contenedorRegistrar").hide();
+        $(".contenedorRegistrarEmpresas").toggle(200);
+    });
+
+    $('#idCancelarE').click(function(){
+        $(".contenedorRegistrar").show();
+        $(".contenedorRegistrarEmpresas").hide();
+    });
+    $('#idCancelarU').click(function(){
+        $(".contenedorRegistrar").show();
+        $(".contenedorRegistrarUsuario").toggle(200);
+    });
+});

@@ -1,0 +1,32 @@
+1) Crear nuevo proyecto
+
+rails new appLogin
+
+2) Abrir Gemlife
+
+sqlite 1.3.13
+
+3) Ingresar  a la carpeta del proyecto
+
+bundle install
+
+(gem install bundler) ---solo la primera vez
+
+(bootsnap 1.3.2
+
+4) instalar la gema sorcery
+ Agregar en el gemfile 
+gem 'sorcery' 
+bundle install
+
+5) rails g sorcery:install --model=usuario
+
+6) revisar el archivo de migracion y personalizar de ser necesario
+
+7) rake db:migrate
+
+8) rails g scaffold usuario username:string email:string crypted_password:string salt:string
+
+9) En el archivo app/model/usuario.rb
+Agregar :
+authenticates_with_sorcery!
