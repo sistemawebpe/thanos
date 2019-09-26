@@ -1,0 +1,27 @@
+/* seccion first*/
+.first {
+    
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8)
+      ),url('../img/portada.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 90vh;
+}
+
+.contenido{
+    padding-top: 20%;
+}
+
+input:valid {
+    background:rgba(0, 128, 0, 0);
+  }
+input:invalid{
+    background:red;
+    color: #fff;
+}
+.blanco{
+  color: #fff;
+}
